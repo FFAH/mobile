@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.hellocordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <allow-navigation hap-rule="yes" href="http://127.0.0.1:4567/*" />
+    <allow-navigation hap-rule="yes" href="http://10.0.2.2:4567/*" />
+    <!--<allow-navigation hap-rule="yes" href="http://139.196.54.156:4567/*" />-->
+    <name>哦哦惠</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="cordova-plugin-splashscreen"/>
+    <access origin="*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="http://*/*" />
+    <platform name="android">
+        <icon src="res/screen/android/oohui36.png" density="ldpi"/>
+        <icon src="res/screen/android/oohui48.png" density="mdpi"/>
+        <icon src="res/screen/android/oohui72.png" density="hdpi"/>
+        <icon src="res/screen/android/oohui96.png" density="xhdpi"/>
+        <icon src="res/screen/android/oohui144.png" density="xxhdpi"/>
+        <icon src="res/screen/android/oohui192.png" density="xxxhdpi"/>
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <platform name="windows">
+    </platform>
+    <platform name="wp8">
+    </platform>
+    <preference name="LoadUrlTimeoutValue" value="10000" /><!-- 这个值设置的是index.html页面加载的时间-->
+    <preference name="SplashScreenDelay" value="0" />
+    <preference name="SplashMaintainAspectRatio" value="true" /><!-- 这个值设为true的话图片会自适应屏幕，不会出现拉伸情况-->
+</widget>
